@@ -1,3 +1,10 @@
+create table book
+(bookID int,
+title nvarchar(50),
+publisher nvarchar(40))
+
+go
+
 insert into book
 values ('1','The Lost Tribe','Bookington'),
 ('2','Misery','Viking'),
@@ -20,6 +27,16 @@ values ('1','The Lost Tribe','Bookington'),
 ('19','Heart of Darkness','Blackwood''s Magazine'),
 ('20','1984','Secker & Warburg')
 
+go
+
+create table book_authors
+(bookID int,
+authorName nvarchar(40))
+
+go
+
+
+
 insert into book_authors
 values ('1','Joseph VonBook'),
 ('2','Stephen King'),
@@ -41,6 +58,16 @@ values ('1','Joseph VonBook'),
 ('18','Joseph Heller'),
 ('19','Joseph Conrad'),
 ('20','George Orwell')
+
+go
+
+create table book_copies
+(bookID int,
+branchID int,
+no_of_copies int)
+
+go
+
 
 insert into book_copies
 values ('1','01','4'),
@@ -124,6 +151,16 @@ values ('1','01','4'),
 ('19','04','9'),
 ('20','04','3')
 
+go
+
+create table publisher
+(publisherName nvarchar(30),
+[address] nvarchar(30),
+phone int)
+
+go
+
+
 insert into publisher
 values ('Bookington','111 1st St.','1111111'),
 ('Viking','222 2nd Ave','2222222'),
@@ -142,11 +179,31 @@ values ('Bookington','111 1st St.','1111111'),
 ('Blackwood''s Magazine',Null,Null),
 ('Secker & Warburg','983 Mt. Carmel Dr.','8398484')
 
+go
+
+create table library_branch
+(branchID int,
+branchName nvarchar(20),
+[address] nvarchar(30))
+
+go
+
 insert into library_branch
 values ('01','Sharpstown','123 Pointy Path'),
 ('02','Central','123 Middle Way'),
 ('03','Winterfell','123 Westeros Ln.'),
 ('04','Solitude','123 Tamriel Dr.')
+
+go
+
+create table borrower
+(cardNo int,
+name nvarchar(30),
+[address] nvarchar(30),
+phone int)
+
+go
+
 
 insert into borrower
 values ('001','Jon Snow','123 Wall Ct.','1112222'),
@@ -159,6 +216,17 @@ values ('001','Jon Snow','123 Wall Ct.','1112222'),
 ('008','King Koopa','123 Palace Rd.','8889999'),
 ('009','Edward Elric','123 Central Ave','7654321'),
 ('010','John-117','123 Chief St.','9876543')
+
+go
+
+create table book_loans
+(bookID int,
+branchID int,
+cardNo int,
+dateOut date,
+dueDate date)
+
+go
 
 insert into book_loans
 values ('11','03','001','2015-12-04','2016-02-04'),
