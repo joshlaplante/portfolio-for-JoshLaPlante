@@ -54,6 +54,10 @@ h5 {
 	text-align: center;
 }
 
+.drop_menu {
+	display: inline;
+}
+
 .side_link{
 	display: inline;
 	margin-left: 20px;
