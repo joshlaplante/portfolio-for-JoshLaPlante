@@ -20,4 +20,11 @@ def evenFibs(num):
         if i%2==0:
             evenFibsList.append(i)
     return sum(evenFibsList)
+
+#the num argument is the upper limit for the values of the numbers in
+#the Fibonacci sequence to be included. the while loop then creates a list
+#of all Fibonacci numbers whose value does not exceed the upper limit.
+#the even Fibonacci numbers from this list are then inserted into
+#a new list, whose sum is returned. to solve this problem, call the
+#evenFibs function as evenFibs(4000000).
     

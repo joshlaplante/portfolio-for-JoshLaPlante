@@ -16,5 +16,18 @@ def primeFactorize(N):
         primeFactorList.append(N)
     return primeFactorList
 
+#the primeFactorize function takes a number to be decomposed into a list
+#of its prime factors. starting with 2 as the divisor, the number to be
+#decomposed is divided evenly as many times as possible by the divisor,
+#and for each successful division, that divisor is added to the primeFactorList.
+#after a remainder is reached from division by the divisor, the divisor is
+#increased and the process is repeated, until the square of the divisor
+#is as large as the number being decomposed. the list of prime factors is
+#then returned
+
 def getLargestPrime(N):
     return max(primeFactorize(N))
+
+#simply pulls the largest prime factor from the list of prime factors
+#created by the primeFactorize function. for this problem, we call on the
+#getLargestPrime function as getLargestPrime(600851475143).
