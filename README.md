@@ -6,4 +6,3 @@ simulate a library system and then make queries to retreive specific data. Using
 
 
 
-[return to portfolio](https://github.com/joshlaplante/portfolio-for-Josh-LaPlante)
