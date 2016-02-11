@@ -3,14 +3,14 @@
 A collection of projects completed both for The Tech Academy and for my own pleasure
 
 #### HTML & CSS
-* Basic Website
-* Simple Log-In Form
+* Built a [basic website](https://github.com/joshlaplante/portfolio-for-JoshLaPlante/tree/master/HTML%26CSS/Basic%20Wesbite)
+* Constructed a [log-in form](https://github.com/joshlaplante/portfolio-for-JoshLaPlante/tree/master/HTML%26CSS/Simple%20Log-In%20Form)
 
 #### JavaScript
-* Browser Game
+* Created a [web-browser game](https://github.com/joshlaplante/portfolio-for-JoshLaPlante/tree/master/JavaScript/Browser%20Game)
 
 #### Python
-* Project Euler Problems
+* Solved a variety of [Project Euler problems](https://github.com/joshlaplante/portfolio-for-JoshLaPlante/tree/master/Python/Project%20Euler%20Problems)
 
 #### SQL
-* Library Project
+* Modeled a [library network](https://github.com/joshlaplante/portfolio-for-JoshLaPlante/tree/master/SQL/Library%20Project)
