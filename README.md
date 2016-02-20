@@ -11,6 +11,7 @@ A collection of projects completed both for The Tech Academy and for my own plea
 
 #### Python
 * Solved a variety of [Project Euler problems](https://github.com/joshlaplante/portfolio-for-JoshLaPlante/tree/master/Python/Project%20Euler%20Problems)
+* Designed a simple [Music Player](https://github.com/joshlaplante/portfolio-for-JoshLaPlante/tree/master/Python/Music%20Player%20GUI)
 
 #### SQL
 * Modeled a [library network](https://github.com/joshlaplante/portfolio-for-JoshLaPlante/tree/master/SQL/Library%20Project)
