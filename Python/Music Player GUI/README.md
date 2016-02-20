@@ -1,4 +1,4 @@
-### Music Player
+### Music Player GUI
 ***
 ##### Challenge:
 While taking a course on Python through The Tech Academy of Portland, I was tasked with creating a basic GUI with some functionality 
