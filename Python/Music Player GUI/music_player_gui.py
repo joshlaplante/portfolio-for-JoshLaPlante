@@ -10,6 +10,7 @@ class windowClass(wx.Frame):
 
     def GUI(self):
         self.imagePresent = False
+        self.textPresent = False
         self.panel = wx.Panel(self)
         #create menuBar and buttons
         menuBar = wx.MenuBar()
@@ -89,20 +90,28 @@ class windowClass(wx.Frame):
             if songToPlay == 'the final fight remix':
                 mp3_path = r'final_fight_remix.mp3'
                 image_path = r'8bit_pulp_fiction.jpg'
+                song_text = 'the final fight remix'
             if songToPlay == 'seaside village':
                 mp3_path = r'seaside_village.mp3'
                 image_path = r'8bit_nes.jpg'
+                song_text = 'seaside village'
             if songToPlay == '8bit theme':
                 mp3_path = r'8bit_theme.mp3'
                 image_path = r'8bit_mage.png'
+                song_text = '8bit theme'
         #loads user chosen song and song image
         if self.imagePresent == True:
             self.image.Destroy()
+        if self.textPresent == True:
+            self.text.Destroy()
         self.image = wx.StaticBitmap(self.panel, size = (200,200), \
                                      pos = (50,50))
         self.image.SetBitmap(wx.Bitmap(image_path))
         self.player.Load(mp3_path)
+        self.text = wx.StaticText(self.panel, -1, "Now Playing: "+song_text, \
+                                  pos = (400,50))
         self.imagePresent = True
+        self.textPresent = True
 
     #create play function
     def playClick(self, e):
