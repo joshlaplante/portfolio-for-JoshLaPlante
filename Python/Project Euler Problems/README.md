@@ -2,7 +2,7 @@
 ***
 Project Euler is a website full of hundreds of math-based computer programming challenges. I've tackled a handful of their problems using Python 3.4, and will regularly update this repository as I continue to solve more.
 
-[#### Problem 1](https://github.com/joshlaplante/portfolio-for-JoshLaPlante/blob/master/Python/Project%20Euler%20Problems/1%20multiples%20of%203%20or%205.py)
+#### [Problem 1](https://github.com/joshlaplante/portfolio-for-JoshLaPlante/blob/master/Python/Project%20Euler%20Problems/1%20multiples%20of%203%20or%205.py)
 * Finds the sum of all multiples of 3 or 5 that are below 1,000
 
 #### Problem 2
