@@ -26,6 +26,9 @@ Project Euler is a website full of hundreds of math-based computer programming c
 #### [Problem 8](https://github.com/joshlaplante/portfolio-for-JoshLaPlante/blob/master/Python/Project%20Euler%20Problems/8%20largest%20product%20in%20series.py)
 * Finds the 13 adjacent digits in a 1,000 digit sequence that produce the largest product
 
+#### [Problem 9](https://github.com/joshlaplante/portfolio-for-JoshLaPlante/blob/master/Python/Project%20Euler%20Problems/9%20special%20pythagorean%20triplet.py)
+* Finds the Pythagorean triplet whose terms sum up to 1,000
+
 #### [Problem 45](https://github.com/joshlaplante/portfolio-for-JoshLaPlante/blob/master/Python/Project%20Euler%20Problems/45%20triangular%20pentagonal%20hexagonal.py)
 * Finds the next number past 40,755 that is triangular, pentagonal, and hexagonal
 
