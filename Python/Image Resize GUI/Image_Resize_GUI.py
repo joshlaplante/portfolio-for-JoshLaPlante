@@ -134,8 +134,9 @@ class GUIwindow():
         if self.imageHeight > self.screenHeight:
             self.imageHeight = self.screenHeight - 200
 
-        #create default image object for label
-        self.Image = ImageTk.PhotoImage(self.openImage)
+        #create default image object for label (resize to take care of any image proportions exceeding maximum)
+        self.defaultImage = self.openImage.resize((self.imageWidth, self.imageHeight), Image.ANTIALIAS)
+        self.Image = ImageTk.PhotoImage(self.defaultImage)
         #create  image label
         self.imageLabel = ttk.Label(self.imageFrame, image = self.Image)
         self.imageLabel.grid(row = 0, column = 0)
