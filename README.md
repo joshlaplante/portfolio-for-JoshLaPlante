@@ -16,3 +16,6 @@ A collection of projects completed both for The Tech Academy and for my own plea
 
 #### SQL
 * Modeled a [library network](https://github.com/joshlaplante/portfolio-for-JoshLaPlante/tree/master/SQL/Library%20Project)
+
+#### C#
+* Crafted a data-driven [Console Application](https://github.com/joshlaplante/portfolio-for-JoshLaPlante/tree/master/C%23/CSharp%20Final)
