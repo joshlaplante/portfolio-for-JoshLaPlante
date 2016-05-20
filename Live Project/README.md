@@ -15,5 +15,8 @@ Using a GitHub [repository](https://github.com/sdorway11/newWebsite) to house ou
 ##### Result:
 This project was a great experience! It was my first collaborative coding experience and I learned a lot about version control in a team setting and web design in general over the two weeks. The most challenging aspect of our project for me was creating Google AMP versions of our existing webpages. There are a variety of strict limitations for AMP HTML pages, such as an outright ban on any JavaScript, requiring all CSS to be defined in the header of the HTML (no in-line, no external stylesheets), limiting all CSS code to 50KB per page, and disallowing the use of many HTML tags, CSS properties and qualifiers, and custom fonts. Needless to say this necessitated a complete re-drafting of the webpages, but will hopefully allow for smoother and faster mobile browsing on the site. Overall, I really enjoyed working on this project with Dallin and Cliff, and I hope the website's re-design will get the Tech Academy more traffic from both prospective students and employers.
 
+The code from this Live Project can be found [here](https://github.com/sdorway11/newWebsite).
+The Tech Academy's website is http://learncodinganywhere.com
+
 ***
 [return to portfolio](https://github.com/joshlaplante/portfolio-for-JoshLaPlante)
