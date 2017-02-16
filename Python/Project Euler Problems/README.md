@@ -29,6 +29,9 @@ Project Euler is a website full of hundreds of math-based computer programming c
 #### [Problem 9](https://github.com/joshlaplante/portfolio-for-JoshLaPlante/blob/master/Python/Project%20Euler%20Problems/9%20special%20pythagorean%20triplet.py)
 * Finds the Pythagorean triplet whose terms sum up to 1,000
 
+#### [Problem 10](https://github.com/joshlaplante/portfolio-for-JoshLaPlante/blob/master/Python/Project%20Euler%20Problems/10%20summation%20of%20primes.py)
+* Finds the sum of all prime numbers below 2 million
+
 #### [Problem 45](https://github.com/joshlaplante/portfolio-for-JoshLaPlante/blob/master/Python/Project%20Euler%20Problems/45%20triangular%20pentagonal%20hexagonal.py)
 * Finds the next number past 40,755 that is triangular, pentagonal, and hexagonal
 
