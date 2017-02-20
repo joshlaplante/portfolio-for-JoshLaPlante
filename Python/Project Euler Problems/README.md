@@ -32,6 +32,9 @@ Project Euler is a website full of hundreds of math-based computer programming c
 #### [Problem 10](https://github.com/joshlaplante/portfolio-for-JoshLaPlante/blob/master/Python/Project%20Euler%20Problems/10%20summation%20of%20primes.py)
 * Finds the sum of all prime numbers below 2 million
 
+#### [Problem 25](https://github.com/joshlaplante/portfolio-for-JoshLaPlante/blob/master/Python/Project%20Euler%20Problems/25%201000%20digit%20fibonacci.py)
+* Finds the first Fibonacci number to contain 1000 or more digits
+
 #### [Problem 45](https://github.com/joshlaplante/portfolio-for-JoshLaPlante/blob/master/Python/Project%20Euler%20Problems/45%20triangular%20pentagonal%20hexagonal.py)
 * Finds the next number past 40,755 that is triangular, pentagonal, and hexagonal
 
