@@ -1,0 +1,356 @@
+html,body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+/* keeps x-scrollbar from appearing during slide animations */
+body{
+	overflow-x: hidden;
+} 
+
+/* overrides default font in pure grid */
+html, button, input, select, textarea,
+    .pure-g [class *= "pure-u"] {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+/* unselectable text for brand */
+.no-select {
+	cursor: default;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+/* HEADER CSS */
+#header, #footer {
+	background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("../img/wood-banner-big.jpg");
+  	background-position: 50% 50%;
+  	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+  	background-size: cover;
+}
+
+#header {
+	height: 700px;
+}
+
+#header-content {
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-content>*, #header-icons>a {
+	color: white;
+	text-shadow: 0 0 3px #000000;
+}
+
+#header-content>h1 {
+	font-size: 3.5em;
+	margin: .2em 0;
+}
+
+#header-content>h2 {
+	font-size: 2.5em;
+	margin: .2em 0;
+}
+
+/* opacity set to 0 to hide before popIn animation */
+#header-icons>a {
+	font-size: 2.2em;
+	margin: 0 .1em;
+	display: inline-block;
+	opacity: 0;
+	animation-name: popIn;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	-webkit-animation-name: popIn;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+#header-icons>a:hover {
+	color: #b5b3b6;
+}
+
+@media (max-width: 368px) {
+	#header-content>h1 {
+		font-size: 3em;
+	}
+	#header-content>h2 {
+		font-size: 2em;
+	}
+	#header-icons>a {
+		font-size: 2em;
+	}
+}
+
+#gh-icon {
+	animation-delay: .33s;
+}
+
+#li-icon {
+	animation-delay: .66s;
+}
+
+#email-icon {
+	animation-delay: 1s;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale3d(.2, .2, .2);
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes popIn {
+  from {
+    -webkit-transform: scale3d(.2, .2, .2);
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+  	-webkit-transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+}
+/* END HEADER CSS */
+
+/* NAV CSS */
+#fixed-nav {
+	position:fixed;
+    top:0;
+    z-index: 1;
+    display: none;
+    height: 3em;
+    line-height: 3em;
+    background: #34878D;
+    opacity: 0.75;
+}
+
+@media (min-width: 768px) {
+	#brand, #nav-icons {
+		position: absolute;
+	}
+	#brand {
+		left: 20%;
+		font-size: 2em;
+	}
+	#nav-icons {
+		right: 20%;
+	}
+}
+
+/* collapse nav into two rows for mobile screens */
+@media (max-width: 767px) {
+	#fixed-nav {
+		height: 6em;
+		display: -webkit-flex;
+    	display: flex;
+    	-webkit-flex-direction: column;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+	}
+}
+
+#brand, #nav-icons {
+	margin: 0 auto;
+	padding: 0;
+}
+
+#brand, #nav-icons>li>a {
+	color: white;
+	text-shadow: 0 0 3px #000000;
+}
+
+#nav-icons>li>a {
+	font-size: 2em;
+	padding: 0 .4em;
+}
+
+#nav-icons>li>a:hover {
+	color: #b5b3b6;
+}
+/* END NAV CSS*/
+
+/* PROJECT ROW CSS */
+.project-row {
+	height: 500px;
+}
+
+.white-row {
+	background: white;
+}
+
+.grey-row {
+	background: #524a57;
+}
+
+/* opacity set to 0 to hide before slide animations */
+.text-column, .img-column {
+	display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.text-column {
+	-webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+#audio-visualizer-img, #image-resize-gui-img {
+	max-height: 80%;
+	max-width: 80%;
+}
+
+#ssb64-12cb-app-img {
+	max-height: 80%;
+	max-width: 30%;
+}
+
+#project-euler-29-img {
+	max-height: 80%;
+	max-width: 50%;
+}
+
+.white-row>.text-column>* {
+	color: black;
+}
+
+.grey-row>.text-column>* {
+	color: white;
+	text-shadow: 0 0 3px #000000;
+}
+
+.slide-right {
+	animation-name: slideRight;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	-webkit-animation-name: slideRight;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.slide-left {
+	animation-name: slideLeft;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	-webkit-animation-name: slideLeft;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(10%);
+  }
+  80% {
+  	transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(10%);
+  }
+  80% {
+  	-webkit-transform: translateX(-5%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-10%);
+  }
+  80% {
+  	transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-10%);
+  }
+  80% {
+  	-webkit-transform: translateX(5%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+/* END PROJECT ROW CSS */
+
+/* FOOTER CSS */
+/* (background set with header ^^^)*/
+#footer {
+	height: 300px;
+}
+
+#footer-content {
+	display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+#footer-content>h2, #footer-content>h2>a {
+	color: white;
+	text-shadow: 0 0 3px #000000;
+}
+
